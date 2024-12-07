@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZimoGameBoat</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="main-container">
+    <!-- Dynamic Title -->
+    <div class="animated-title">
+      <span>Z</span><span>i</span><span>m</span><span>o</span><span>G</span><span>a</span><span>m</span><span>e</span><span>B</span><span>o</span><span>a</span><span>t</span>
+    </div>
+
+    <!-- Balance Section -->
+    <div class="balance-box">
+      <h2>Balance</h2>
+      <p id="balance">$0.00</p >
+      <div class="balance-buttons">
+        <button class="btn" id="withdraw-btn">Withdraw</button>
+        <button class="btn">Support</button>
+        <button class="btn">Help</button>
+      </div>
+    </div>
+
+    <!-- Option Buttons -->
+    <div class="option">
+      <button class="option-btn" id="watch-ads-btn">Watch Ads</button>
+    </div>
+
+    <div class="option">
+      <button class="option-btn">Post Task</button>
+    </div>
+
+    <div class="option">
+      <button class="option-btn">Partner</button>
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    <div class="bottom-nav">
+      <button class="nav-btn">Home</button>
+      <button class="nav-btn">Tasks</button>
+      <button class="nav-btn">Profile</button>
+    </div>
+  </div>
+
+  <!-- Withdraw Modal -->
+  <div id="withdraw-modal" class="modal">
+    <div class="modal-content">
+      <!-- Close button for the modal -->
+      <button id="close-modal-btn" class="close-btn">X</button>
+      <h3>Enter Amount to Withdraw</h3>
+      <input type="number" id="withdraw-amount" placeholder="Enter Amount" />
+      <button id="confirm-withdraw-btn">Confirm Withdraw</button>
+      <p id="transaction-id"></p >
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
